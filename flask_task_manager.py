@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+
 import os
 
 app = Flask(__name__)
@@ -10,7 +11,7 @@ app.config['UPLOAD_FOLDER'] = 'uploads/'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 from models import db
-db.init_app(app)  # Make sure this line is present
+db.init_app(app) 
 
 from auth.routes import auth_bp
 from tasks.routes import tasks_bp
@@ -23,6 +24,6 @@ def welcome():
     return "Welcome to the Flask Task Manager! Please <a href='/login'>log in</a> or <a href='/register'>register</a>."
 
 if __name__ == '__main__':
-    with app.app_context():  # This ensures the database is created properly
+    with app.app_context(): 
         db.create_all()
     app.run(debug=True)

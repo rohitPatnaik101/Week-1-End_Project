@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for, session
-from models import db, Task
+from models.models import db, Task  
 import os
 from functools import wraps
 from flask import current_app as app
