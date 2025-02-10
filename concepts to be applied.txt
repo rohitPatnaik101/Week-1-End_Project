@@ -1,4 +1,5 @@
-concept : separation of concern
+concept :
+Regular Expression to validate password
 
 Use more custom decorators from python
 
@@ -6,7 +7,7 @@ error handler
 
 static method, class method 
 
-update and delete in SQLAlchamy
+also use update and delete operations in SQLAlchamy
 
 cli command 
 
