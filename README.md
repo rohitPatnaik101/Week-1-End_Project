@@ -1,5 +1,5 @@
 # Week-1-End_Project
-A simple and modular <b><i>Task Manager</i></b>, which have home, register, login and dashboard pages in it.</br>
+A simple and SoC structured <b><i>Task Manager</i></b>, which have home, register, login and dashboard pages in it.</br>
 <b>Feartures</b></br>
 <ul>
   route: http://127.0.0.1:500, Home page which can redirect to login and register page</br>
