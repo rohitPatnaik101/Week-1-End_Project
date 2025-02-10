@@ -9,8 +9,6 @@ static method, class method
 
 also use update and delete operations in SQLAlchamy
 
-cli command 
-
 blueprint for both before request and after request 
 
 one to one and many to many and many to one relationships 
