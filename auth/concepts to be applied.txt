@@ -1,0 +1,15 @@
+concept : separation of concern
+
+custom decorators from python
+
+error handler
+
+static method, class method 
+
+update and delete in SQLAlchamy
+
+cli command 
+
+blueprint for both before request and after request 
+
+one to one and many to many and many to one relationships 

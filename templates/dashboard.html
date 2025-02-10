@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome to Your Dashboard</h2>
+    <a href="{{ url_for('auth.logout') }}">Logout</a>
+
+    <h3>Your Tasks</h3>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }} 
+                {% if task.file_path %}
+                    <a href="{{ task.file_path }}" download>Download File</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Add a New Task</h3>
+    <form method="POST" action="{{ url_for('tasks.add_task') }}" enctype="multipart/form-data">
+        <label>Task Title:</label>
+        <input type="text" name="title" required><br>
+        <label>Attach File (optional):</label>
+        <input type="file" name="file"><br>
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+</html>
