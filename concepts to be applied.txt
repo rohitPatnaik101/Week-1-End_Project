@@ -1,6 +1,6 @@
 concept : separation of concern
 
-custom decorators from python
+Use more custom decorators from python
 
 error handler
 
